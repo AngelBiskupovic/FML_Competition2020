@@ -50,6 +50,5 @@ The participants must submit a zip file the following two files to the [competit
 * A short paper which includes the explanation on the own approach, the MSE for the training and test data, and discussions.
 * A xml file of the fuzzy rule-based regression model based on FML. 
 Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format.
-The competition committee will evaluate the short paper and the xml file. 
 
-The competition result for each category will be public in IEEE WCCI 2020.
+The competition committee will evaluate the short paper and the xml file. The competition result for each category will be public in IEEE WCCI 2020.
