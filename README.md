@@ -8,7 +8,7 @@ The goal of this competition is to design accurate and interpretable fuzzy rule-
 
 ## Competition Data
 The data in this competition are derived from the data on the game of Go (https://deepmind.com/alphago-master-series). There are 60 game data available. Each game data include the prediction by Darkforest AI bot and that by EFL OpenGo AI bot. The competition data can be found in the director **"[Comp2020Data](Comp2020Data)"** in this page. Each data file is named "C2020_GameDataG?.csv" (? represents the game number.) This year, we remove the 25th, 48th, and 60th games because the predictions of the winning rates by Darkforest AI bot and EFL OpenGo AI bot are inconsistent. We use **44 game results from the 1st game to 45th game as the training data**. We use **13 game results from the 46th game to 59th game as the test data**. 
-For simplicity, we combined the game results and generated two files: **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TrainData.csv)**. 
+For simplicity, we combined the game results and generated two files: **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)**. 
 
 ### Data description
 Each row represents an instance which consists of 12 input attributes and 2 outputs. 
@@ -23,11 +23,26 @@ Each row represents an instance which consists of 12 input attributes and 2 outp
 * The two outputs are EBWR at time _t_ and DBWR at time _t_+1.
 * EBWR: The win rate of Black predicted by EFL OpenGo AI bot at time _t_. (The first letter of each abbreviation represents "E"FL.)
 
-The names of inputs and outputs in **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TrainData.csv)** are DBSN(t-1), DWSN(t-1), DBWR(t-1), DWWR(t-1), DBTMR(t-1), DWTMR(t-1), DBSN(t), DWSN(t), DBWR(t), DWWR(t), DBTMR(t), DWTMR(t), EBWR(t), and DBWR(t+1).
+The names of inputs and outputs in **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)** are DBSN(t-1), DWSN(t-1), DBWR(t-1), DWWR(t-1), DBTMR(t-1), DWTMR(t-1), DBSN(t), DWSN(t), DBWR(t), DWWR(t), DBTMR(t), DWTMR(t), EBWR(t), and DBWR(t+1).
 
-The ranges of all the variables are as follows (The same info can be listed in [data_range.csv](Comp2020Data/data_range.csv):
+The ranges of all the variables are as follows (The same info can be listed in [data_range.csv](Comp2020Data/data_range.csv)):
 | | DBSN | DWSN | DBWR | DWWR | DBTMR | DWTMR | EBWR |
 |----|----|----|----|----|----|----|----|
 | min | 0 | 0 | 0 | 0 | 0 | 0.4 | 0 |
 | max | 22000 | 22000 | 1 | 1 | 1 | 1 | 1 |
+
+## Competition Categories
+There are two categories in this competition. 
+### Category 1: Prediction of EBWR for the current move
+In this category, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict EBWR(_t_) using some or all of the input attributes**. The meaning of this category is as follows. Let assume two players A and B. Player A uses Darkforest AI bot to get the hint of the next moves, while Player B uses EFL OpenGo AI bot to do the same. Each player cannot know the suggestion by the opponent's AI bot. So, Player A uses the fuzzy rule-based regression model to guess the current situation which is predicted by the opponent's AI bot. If it is possible to know that, Player A can evaluate the current situation from multiple viewpoints (i.e., Darkforest and EFL OpenGo). 
+
+### Category 2: Prediction of DBWR for the next move
+In this category, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict DBWR(_t_+1) using some or all of the input attributes**. The meaning of this category is as follows. Let assume that Player A wants to know the future situation to change the strategy at a proper moment. To do that, Player A uses the fuzzy rule-based regression model to predict the winning rate for the next move as well. 
+
+## Rules
+* Participants must use FML to design a fuzzy rule-based regression model.
+* The proposed regression model is evaluated by the mean squread error over all instances of the test data ([C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)). 
+* Only the training data is available for optimizing/learning the regression model and tuning the parameters of optimization/learning algorithms.
+* All the input attributes in the training data are not necessarily used. It means that participants can freely choose a part of the input attributes.
+
 
