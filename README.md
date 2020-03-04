@@ -41,8 +41,12 @@ In this category, the goal is **to design a fuzzy rule-based regressoin model wh
 
 ## Rules
 * Participants must use FML to design a fuzzy rule-based regression model.
-* The proposed regression model is evaluated by the mean squread error over all instances of the test data ([C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)). 
+* The proposed regression model is evaluated by the mean squread error (MSE) over all instances of the test data ([C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)). 
 * Only the training data is available for optimizing/learning the regression model and tuning the parameters of optimization/learning algorithms.
 * All the input attributes in the training data are not necessarily used. It means that participants can freely choose a part of the input attributes.
 
+## Evaluation
+The participants must submit a zip file the following two files to the [competition website](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/). 
+* A short paper which includes the explanation on the own approach, the MSE for the training and test data, and discussions.
+* A xml file of the fuzzy rule-based regression model based on FML. 
 
