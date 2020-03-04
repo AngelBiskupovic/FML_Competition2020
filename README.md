@@ -52,3 +52,13 @@ The participants must submit a zip file the following two files to the [competit
 Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format.
 
 The competition committee will evaluate the short paper and the xml file. The competition result for each category will be public in IEEE WCCI 2020.
+
+## Introduction to Fuzzy Markup Language
+For more details about FML, please download the FML user guide (Version 0.1.1) from http://kws.nutn.edu.tw/fmldoc/
+
+## Available Softwares
+* VisualFMLTool: It can be executed on platforms containing the Java Runtime Environment. The Java Software Development Kit, including JRE, compiler and many other tools can be found at [here](http://java.sun.com/j2se/). The VisualFMLTool can download from [here](http://kws.nutn.edu.tw/fml/) and then to extract it. Then it is only needed to click the file VisualFMLTool.bat included in the zip to execute the tool.
+
+* JFML: A library for FML programming that is very simple to use and compliant with IEEE 1855. JFML can download from [here](https://www.uco.es/JFML/). Additional information about the library can be found in the following papers.
+  * J. M. Soto-Hidalgo, Jose M. Alonso, G. Acampora, and J. Alcala-Fdez, "[JFML: A Java library to design fuzzy logic systems according to the IEEE Std 1855-2016](https://ieeexplore.ieee.org/document/8476558)," _IEEE Access_, vol. 6, pp. 54952-54964, 2018.
+  * J. M. Soto-Hidalgo, A. Vitiello, J. M. Alonso, G. Acampora, J. Alcala-Fdez, "[Design of fuzzy controllers for embedded systems with JFML](https://www.atlantis-press.com/journals/ijcis/125905646)," _International Journal of Computational Intelligence Systems_, vol. 12, no. 1, pp. 204-214, 2019.
