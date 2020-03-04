@@ -49,9 +49,9 @@ In this category, the goal is **to design a fuzzy rule-based regressoin model wh
 The participants must submit a zip file the following two files to the [competition website](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/). 
 * A short paper which includes the explanation on the own approach, the MSE for the training and test data, and discussions.
 * A xml file of the fuzzy rule-based regression model based on FML. 
-Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format.
+Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is highly recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format. If participants perform two categories, they can include the results of two categories in a single paper.  
 
-The competition committee will evaluate the short paper and the xml file. The competition result for each category will be public in IEEE WCCI 2020.
+The competition committee will evaluate the short paper and the xml file. The competition result will be public in IEEE WCCI 2020.
 
 ## Introduction to Fuzzy Markup Language
 For more details about FML, please download the FML user guide (Version 0.1.1) from http://kws.nutn.edu.tw/fmldoc/
