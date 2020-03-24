@@ -47,8 +47,8 @@ In this category, the goal is **to design a fuzzy rule-based regressoin model wh
 
 ## Evaluation
 The participants must submit a zip file of the following two files to the [competition website](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/). 
-* A short paper which includes the explanation on the own approach, the MSE for the training and test data, and discussions.
-* A xml file of the fuzzy rule-based regression model based on FML. 
+* A short paper which includes the explanation on (1) the own approach, (2) the MSE for the training and test data, and (3) discussions on the obtained regression models and results.
+* An xml file of the fuzzy rule-based regression model based on FML. 
 
 Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is highly recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format. If participants perform two categories, they can include the results of two categories in a single paper.  
 
@@ -67,7 +67,7 @@ For more details about FML, please download the FML user guide (Version 0.1.1) f
   * J. M. Soto-Hidalgo, A. Vitiello, J. M. Alonso, G. Acampora, J. Alcala-Fdez, "[Design of fuzzy controllers for embedded systems with JFML](https://www.atlantis-press.com/journals/ijcis/125905646)," _International Journal of Computational Intelligence Systems_, vol. 12, no. 1, pp. 204-214, 2019.
 
 ## Sample Codes for This Competition
-* A sample Eclipse project is available on "[jfml2020_sample](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample)" which is based on JFML. The sample codes can be used by IntelliJ IDEA as well. 
+* A sample Eclipse project is available on "[jfml2020_sample](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample)" which is based on JFML. The sample codes can be used in IntelliJ IDEA as well. 
 
 ## Reference
 * C. S. Lee, M. H. Wang, Y. L. Tsai, L. W. Ko, B. Y. Tsai, P. H. Hung, L. A. Lin, and N. Kubota, "<a href="https://link.springer.com/article/10.1007/s12652-019-01454-4" target="_blank">Intelligent agent for real-world applications on robotic edutainment and humanized co-learning</a>," Journal of Ambient Intelligence and Humanized Computing, 2019.
