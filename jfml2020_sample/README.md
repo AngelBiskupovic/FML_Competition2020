@@ -7,7 +7,16 @@ The sample package is placed at "src/main". The "jfml" package is original packa
 
 The simplest way is to download or clone "[FML_Competition2020](https://github.com/CI-labo-OPU/FML_Competition2020.git)" and open the folder "jfml2020_sample" from Eclipse.
 
+The package Explore in Eclipse will be as follows:
+<img src="png/eclipse_snap.png" width="50%">
+
+
 Eclipse can be downloaded from [here](https://www.eclipse.org).
+
+You can also use IntelliJ IDEA which can be downloaded from [here](https://www.jetbrains.com/idea/). You should copy "[dataset](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample/dataset)" and "[src](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample/src)" to the project in IntelliJ IDEA like:
+
+<img src="png/intellij_idea_snap.png" width="40%">
+
 
 ## About the sample package
 This package includes three java source codes as follows:
@@ -33,6 +42,17 @@ To obtain the result for Category 2, you have to comment out the 69th line of "M
 
     // static String outputName = "EBWR";   // Category 1
     static String outputName = "DBWR_next";    // Category 2
+
+Then, please execute again. You will obtain the following result.
+
+    Training: MSE = 0.0010160558
+        Test: MSE = 7.531748E-4
+
+The generated result files and xml file have different file names from Category 1. 
+
+If you use this sample for competition, please cite 
+
+    https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample 
 
 Enjoy!
 
