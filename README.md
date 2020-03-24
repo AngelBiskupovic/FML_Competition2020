@@ -46,7 +46,7 @@ In this category, the goal is **to design a fuzzy rule-based regressoin model wh
 * All the input attributes in the training data are not necessarily used. It means that participants can freely choose a part of the input attributes.
 
 ## Evaluation
-The participants must submit a zip file the following two files to the [competition website](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/). 
+The participants must submit a zip file of the following two files to the [competition website](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/). 
 * A short paper which includes the explanation on the own approach, the MSE for the training and test data, and discussions.
 * A xml file of the fuzzy rule-based regression model based on FML. 
 
