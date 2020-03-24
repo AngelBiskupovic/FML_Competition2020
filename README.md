@@ -53,6 +53,8 @@ Any format is acceptable for the short paper. But [IEEE paper format](http://oas
 
 The competition committee will evaluate the short paper and the xml file. The competition result will be public in IEEE WCCI 2020.
 
+**Submission Deadline: April 15, 2020, 23:59 (GMT)**
+
 ## Introduction to Fuzzy Markup Language
 For more details about FML, please download the FML user guide (Version 0.1.1) from http://kws.nutn.edu.tw/fmldoc/
 
