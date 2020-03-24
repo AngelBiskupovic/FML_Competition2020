@@ -37,19 +37,19 @@ Once your execute the "Main.java", the mean square errors for the training data 
     Training: MSE = 0.05370033
         Test: MSE = 0.09745144
 
-This result is for Category 1. By refreshing the package, you will find the result files named "EBWR\_H2\_ite100\_train.csv" and "EBWR\_H2\_ite100\_test.csv" together with the xml file named "FML_EBWR.xml".
+This result is for Task 1. By refreshing the package, you will find the result files named "EBWR\_H2\_ite100\_train.csv" and "EBWR\_H2\_ite100\_test.csv" together with the xml file named "FML_EBWR.xml".
 
-To obtain the result for Category 2, you have to comment out the 69th line of "Main.java" and uncomment the 70th line.
+To obtain the result for Task 2, you have to comment out the 69th line of "Main.java" and uncomment the 70th line.
 
-    // static String outputName = "EBWR";   // Category 1
-    static String outputName = "DBWR_next";    // Category 2
+    // static String outputName = "EBWR";   // Task 1
+    static String outputName = "DBWR_next";    // Task 2
 
-Then, please execute again. You will obtain the following result.
+Then, please execute again. You will obtain the following result for Task 2.
 
     Training: MSE = 0.0010160558
         Test: MSE = 7.531748E-4
 
-The generated result files and xml file have different file names from Category 1. 
+The generated result files and xml file have different file names from Task 1. 
 
 If you use this sample for competition, please cite 
 
