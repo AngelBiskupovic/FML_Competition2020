@@ -6,8 +6,9 @@ This is an eclipse project for a sample for JFML competition.
 The sample package is placed at "src/main".
 The "jfml" package is original package of the _[JFML library](https://www.uco.es/JFML/)_.
 
-You are needed to download only the sample package ("main").
 You can execute a sample with the sample package and the original JFML library.
+
+The simplest way is to dowonload this folder "jfml2020_sample" and open it from eclipse. 
 
 ## About the sample package
 This package includes three java source codes as follows:
