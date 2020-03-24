@@ -62,3 +62,10 @@ For more details about FML, please download the FML user guide (Version 0.1.1) f
 * JFML: A Java library for FML programming that is very simple to use and compliant with IEEE 1855. JFML can download from [here](https://www.uco.es/JFML/). Additional information about the library can be found in the following papers. A Pyhon library is also available. 
   * J. M. Soto-Hidalgo, Jose M. Alonso, G. Acampora, and J. Alcala-Fdez, "[JFML: A Java library to design fuzzy logic systems according to the IEEE Std 1855-2016](https://ieeexplore.ieee.org/document/8476558)," _IEEE Access_, vol. 6, pp. 54952-54964, 2018.
   * J. M. Soto-Hidalgo, A. Vitiello, J. M. Alonso, G. Acampora, J. Alcala-Fdez, "[Design of fuzzy controllers for embedded systems with JFML](https://www.atlantis-press.com/journals/ijcis/125905646)," _International Journal of Computational Intelligence Systems_, vol. 12, no. 1, pp. 204-214, 2019.
+
+## Sample Eclipse Project for this competition
+* A sample Eclipse project is available on "[jfml2020_sample](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample)". 
+
+-------------------
+
+
