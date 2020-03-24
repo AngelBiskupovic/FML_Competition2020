@@ -1,6 +1,6 @@
 # JFML2020 Sample Codes
 
-This is an eclipse project for a sample for JFML competition.
+This is an Eclipse project for a sample for JFML competition.
  _[FML-based Machine Learning Competition for Human and Smart Machine Co-Learning on Game of Go @ WCCI2020](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/overview.php)_
 
 The sample package is placed at "src/main".
@@ -8,7 +8,9 @@ The "jfml" package is original package of the _[JFML library](https://www.uco.es
 
 You can execute a sample with the sample package and the original JFML library.
 
-The simplest way is to download or clone "[FML_Competition2020](https://github.com/CI-labo-OPU/FML_Competition2020.git)" and open the folder "jfml2020_sample" from eclipse.
+The simplest way is to download or clone "[FML_Competition2020](https://github.com/CI-labo-OPU/FML_Competition2020.git)" and open the folder "jfml2020_sample" from Eclipse.
+
+Eclipse can be downloaded from [here](https://www.eclipse.org).
 
 ## About the sample package
 This package includes three java source codes as follows:
