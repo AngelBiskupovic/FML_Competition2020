@@ -1,7 +1,7 @@
 # Overview of FML Competition in FUZZ-IEEE 2020
-This is the overview for Fuzzy Markup Laungage (FML)-based machine learning competition for human and smart machine co-learning on game of Go at IEEE WCCI 2020. This page provides the datasets and the sample codes for the competition. The related information is also listed. 
+This is the overview for Fuzzy Markup Laungage (FML)-based Machine Learning Competition for Human and Smart Machine Co-learning on Game of Go at IEEE WCCI 2020. This page provides the detailed information, the datasets and the sample codes for the competition. The related information is also listed. 
 
-Please visite the competition page => http://oase.nutn.edu.tw/wcci2020-fmlcompetition/
+Please visit the competition page => http://oase.nutn.edu.tw/wcci2020-fmlcompetition/
 
 ## Goal 
 The goal of this competition is to design accurate and interpretable fuzzy rule-based regression models using FML. 
