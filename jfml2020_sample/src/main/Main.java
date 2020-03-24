@@ -66,8 +66,8 @@ public class Main {
 							"DBSN", "DWSN", "DBWR", "DWWR", "DBTMR", "DWTMR"};
 
 	/** The name of output variable */
-	static String outputName = "EBWR";
-//	static String outputName = "DBWR_next";
+	static String outputName = "EBWR";     // Task 1
+//	static String outputName = "DBWR_next";  // Task 2
 
 	/** The name of defined homogeneous fuzzy set */
 	static String[] termName = {"Small", "Large"};
@@ -265,7 +265,7 @@ public class Main {
 	 * <h1>initRuleIdxWithAllCombinationsOfAntecedent</h1>
 	 * This function defines a set of indexes of antecedent parts. <br/>
 	 * User can edit this function or can make new function, for user's wanted set of rules.<br/>
-	 * @return int[ruleNum][dimenstion]
+	 * @return int[ruleNum][dimension]
 	 */
 	public static int[][] initRuleIdxWithAllCombinationsOfAntecedent(){
 		// ************************************************************
