@@ -8,7 +8,7 @@ The "jfml" package is original package of the _[JFML library](https://www.uco.es
 
 You can execute a sample with the sample package and the original JFML library.
 
-The simplest way is to dowonload this folder "jfml2020_sample" and open it from eclipse. 
+The simplest way is to download or clone "[FML_Competition2020](https://github.com/CI-labo-OPU/FML_Competition2020.git)" and open the folder "jfml2020_sample" from eclipse.
 
 ## About the sample package
 This package includes three java source codes as follows:
