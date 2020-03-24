@@ -64,7 +64,7 @@ For more details about FML, please download the FML user guide (Version 0.1.1) f
   * J. M. Soto-Hidalgo, A. Vitiello, J. M. Alonso, G. Acampora, J. Alcala-Fdez, "[Design of fuzzy controllers for embedded systems with JFML](https://www.atlantis-press.com/journals/ijcis/125905646)," _International Journal of Computational Intelligence Systems_, vol. 12, no. 1, pp. 204-214, 2019.
 
 ## Sample Codes for This Competition
-* A sample Eclipse project is available on "[jfml2020_sample](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample)". The sample codes can be used by IntelliJ IDEA as well. 
+* A sample Eclipse project is available on "[jfml2020_sample](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample)" which is based on JFML. The sample codes can be used by IntelliJ IDEA as well. 
 
 ## Reference
 * C. S. Lee, M. H. Wang, Y. L. Tsai, L. W. Ko, B. Y. Tsai, P. H. Hung, L. A. Lin, and N. Kubota, "<a href="https://link.springer.com/article/10.1007/s12652-019-01454-4" target="_blank">Intelligent agent for real-world applications on robotic edutainment and humanized co-learning</a>," Journal of Ambient Intelligence and Humanized Computing, 2019.
