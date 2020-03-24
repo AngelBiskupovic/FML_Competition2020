@@ -31,26 +31,28 @@ The ranges of all the variables are as follows (The same info is listed in [data
 | min | 0 | 0 | 0 | 0 | 0 | 0.4 | 0 |
 | max | 22000 | 22000 | 1 | 1 | 1 | 1 | 1 |
 
-## Competition Categories
-There are two categories in this competition. 
-### Category 1: Prediction of EBWR for the current move
-In this category, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict EBWR(_t_) using some or all of the input attributes**. The meaning of this category is as follows. Let assume two players A and B. Player A uses Darkforest AI bot to get the hint of the next moves, while Player B uses EFL OpenGo AI bot to do the same. Each player cannot know the suggestion by the opponent's AI bot. So, Player A uses the fuzzy rule-based regression model to guess the current situation which is predicted by the opponent's AI bot. If it is possible to know that, Player A can evaluate the current situation from multiple viewpoints (i.e., Darkforest and EFL OpenGo). 
+## Competition Tasks
+There are two tasks in this competition. 
 
-### Category 2: Prediction of DBWR for the next move
-In this category, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict DBWR(_t_+1) using some or all of the input attributes**. The meaning of this category is as follows. Let assume that Player A wants to know the future situation to change the strategy at a proper moment. To do that, Player A uses the fuzzy rule-based regression model to predict the winning rate for the next move as well. 
+### Task 1: Prediction of EBWR for the current move
+In this task, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict EBWR(_t_) using some or all of the input attributes**. The meaning of this task is as follows. Let assume two players A and B. Player A uses Darkforest AI bot to get the hint of the next moves, while Player B uses EFL OpenGo AI bot to do the same. Each player cannot know the suggestion by the opponent's AI bot. So, Player A uses the fuzzy rule-based regression model to guess the current situation which is predicted by the opponent's AI bot. If it is possible to know that, Player A can evaluate the current situation from multiple viewpoints (i.e., Darkforest and EFL OpenGo). 
+
+### Task 2: Prediction of DBWR for the next move
+In this task, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict DBWR(_t_+1) using some or all of the input attributes**. The meaning of this task is as follows. Let assume that Player A wants to know the future situation to change the strategy at a proper moment. To do that, Player A uses the fuzzy rule-based regression model to predict the winning rate for the next move as well. 
 
 ## Rules
-* Participants must use FML to design a fuzzy rule-based regression model.
+* Participants must use FML to design a fuzzy rule-based regression model for the above two tasks.
 * The proposed regression model is evaluated by the mean squread error (MSE) over all instances of the test data ([C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)). 
 * Only the training data is available for optimizing/learning the regression model and tuning the parameters of optimization/learning algorithms.
 * All the input attributes in the training data are not necessarily used. It means that participants can freely choose a part of the input attributes.
 
 ## Evaluation
 The participants must submit a zip file of the following two files to the [competition website](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/). 
-* A short paper which includes the explanation on (1) the own approach, (2) the MSE for the training and test data, and (3) discussions on the obtained regression models and results.
+
+* A short paper which includes the explanation on (1) the own approach, (2) the MSE for the training and test data, and (3) discussions on the obtained regression models and results. The results for both tasks must be included. 
 * An xml file of the fuzzy rule-based regression model based on FML. 
 
-Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is highly recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format. If participants perform two categories, they can include the results of two categories in a single paper.  
+Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is highly recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format. 
 
 The competition committee will evaluate the short paper and the xml file. The competition result will be public in IEEE WCCI 2020.
 
