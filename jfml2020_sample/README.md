@@ -26,8 +26,8 @@ This package includes three java source codes as follows:
  + Main.java
 
 "Item.java" and "ItemSet.java" are the dataset implementations for this competition.
-"Main.java" is a sample main procedure of designing the fuzzy inference system based on JFML library.
-In the sample system, only two triangular membership functions "small" and "large" are used for each attribute. The antecedent parts are fixed and the consequent part is tuned by the training data. 
+"Main.java" is a sample main procedure of designing the fuzzy inference model based on JFML library.
+In the sample model, only two triangular membership functions "small" and "large" are used for each attribute. The sample model is composed of a large number of rules which are all the combinations of two membership functions for 12 attributes. The antecedent part of each rule is fixed, while its consequent part is tuned by the training data. 
 
 You can execute the "Main.java" with no arguments on Eclipse,
 or you can export the main function in "Main.java" to JAR file and execute the JAR file.
