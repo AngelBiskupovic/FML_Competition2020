@@ -25,7 +25,7 @@ Each row represents an instance which consists of 12 input attributes and 2 outp
 
 The names of inputs and outputs in **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)** are DBSN(_t_-1), DWSN(_t_-1), DBWR(_t_-1), DWWR(_t_-1), DBTMR(_t_-1), DWTMR(_t_-1), DBSN(_t_), DWSN(_t_), DBWR(_t_), DWWR(_t_), DBTMR(_t_), DWTMR(_t_), EBWR(_t_), and DBWR(_t_+1).
 
-The ranges of all the variables are as follows (The same info can be listed in [data_range.csv](Comp2020Data/data_range.csv)):
+The ranges of all the variables are as follows (The same info is listed in [data_range.csv](Comp2020Data/data_range.csv)):
 | | DBSN | DWSN | DBWR | DWWR | DBTMR | DWTMR | EBWR |
 |----|----|----|----|----|----|----|----|
 | min | 0 | 0 | 0 | 0 | 0 | 0.4 | 0 |
