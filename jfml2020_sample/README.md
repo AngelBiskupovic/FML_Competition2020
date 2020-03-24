@@ -8,7 +8,8 @@ The sample package is placed at "src/main". The "jfml" package is original packa
 The simplest way is to download or clone "[FML_Competition2020](https://github.com/CI-labo-OPU/FML_Competition2020.git)" and open the folder "jfml2020_sample" from Eclipse.
 
 The package Explore in Eclipse will be as follows:
-<img src="png/eclipse_snap.png" width="50%">
+
+<img src="png/eclipse_snap.png" width="40%">
 
 
 Eclipse can be downloaded from [here](https://www.eclipse.org).
