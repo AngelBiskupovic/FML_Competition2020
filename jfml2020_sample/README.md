@@ -1,11 +1,11 @@
-# JFML2020 Sample Codes
+# JFML2020 Sample Code
 
-This is an Eclipse project for a sample for JFML competition.
+This is an Eclipse project providing sample code for a  JFML competition.
  _[FML-based Machine Learning Competition for Human and Smart Machine Co-Learning on Game of Go @ WCCI2020](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/overview.php)_.
 
-The sample package is placed at "src/main". The "jfml" package is original package of the _[JFML library](https://www.uco.es/JFML/)_. You can execute a sample with the sample package and the original JFML library.
+The sample package is placed at "src/main". The "jfml" package is the original package of the _[JFML library](https://www.uco.es/JFML/)_. You can execute a sample with the sample package and the original JFML library.
 
-The simplest way is to download or clone "[FML_Competition2020](https://github.com/CI-labo-OPU/FML_Competition2020.git)" and open the folder "jfml2020_sample" from Eclipse.
+The simplest way to run the code is to download or clone "[FML_Competition2020](https://github.com/CI-labo-OPU/FML_Competition2020.git)" and open the folder "jfml2020_sample" from Eclipse.
 
 The package Explore in Eclipse will be as follows:
 
@@ -14,13 +14,13 @@ The package Explore in Eclipse will be as follows:
 
 Eclipse can be downloaded from [here](https://www.eclipse.org).
 
-You can also use IntelliJ IDEA which can be downloaded from [here](https://www.jetbrains.com/idea/). You should copy "[dataset](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample/dataset)" and "[src](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample/src)" to the project in IntelliJ IDEA like:
+You can also use IntelliJ IDEA which can be downloaded from [here](https://www.jetbrains.com/idea/). You should copy "[dataset](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample/dataset)" and "[src](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample/src)" to the project in IntelliJ IDEA so that it looks like:
 
 <img src="png/intellij_idea_snap.png" width="40%">
 
 
 ## About the sample package
-This package includes three java source codes as follows:
+This package includes three Java source codes as follows:
  + Item.java
  + ItemSet.java
  + Main.java
@@ -29,10 +29,9 @@ This package includes three java source codes as follows:
 "Main.java" is a sample main procedure of designing the fuzzy inference model based on JFML library.
 In the sample model, only two triangular membership functions "small" and "large" are used for each attribute. The sample model is composed of a large number of rules which are all the combinations of two membership functions for 12 attributes. The antecedent part of each rule is fixed, while its consequent part is tuned by the training data. 
 
-You can execute the "Main.java" with no arguments on Eclipse,
-or you can export the main function in "Main.java" to JAR file and execute the JAR file.
+You can execute the "Main.java" with no arguments on Eclipse, or you can export the main function in "Main.java" to JAR file and execute the JAR file.
 
-Once your execute the "Main.java", the mean square errors for the training data and test data are shown in the console like:
+Once your execute the "Main.java", the mean square errors for the training data and test data are shown in the console:
 
     Training: MSE = 0.05370033
         Test: MSE = 0.09745144
