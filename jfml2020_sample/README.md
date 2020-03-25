@@ -56,4 +56,6 @@ If you use this sample for competition, please cite
 
 Enjoy!
 
-Updated: 2020/03/24
+
+### Known problems
+* JFML does not properly work on Java 11. Java 8 is recommended. 
