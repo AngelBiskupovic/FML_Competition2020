@@ -12,7 +12,7 @@ There has been considerable interest among both students and professionals in ap
 This competition will consider two popular, open-source Go engines: [Darkforest](https://github.com/facebookresearch/darkforestGo) and [ELF OpenGo](https://ai.facebook.com/tools/elf-opengo).  Participants are tasked with fuzzy rule-based regression models which will predict the winning probability each engine assigns to black.
 
 ## Competition Data
-The data in this competition are derived from 60 games which were played between AlphaGo and various human masters (https://deepmind.com/alphago-master-series). Each data file includes the predictions from both Darkforest AI and EFL OpenGo AI bot. The competition data can be found in the directory **"[Comp2020Data](Comp2020Data)"** in this page. Each data file is named "C2020_GameDataG?.csv" (? represents the game number.) This year, we will remove the 25th, 48th, and 60th games because the predictions of the winning rates made by the Darkforest AI bot and the ELF OpenGo AI bot are inconsistent. We use **44 game results from the 1st game to 45th game as the training data**. We use **13 game results from the 46th game to 59th game as the test data**. 
+The data in this competition are derived from 60 games which were played between AlphaGo and various human masters (https://deepmind.com/alphago-master-series). Each data file includes the predictions from both Darkforest AI and ELF OpenGo AI bot. The competition data can be found in the directory **"[Comp2020Data](Comp2020Data)"** in this page. Each data file is named "C2020_GameDataG?.csv" (? represents the game number.) This year, we will remove the 25th, 48th, and 60th games because the predictions of the winning rates made by the Darkforest AI bot and the ELF OpenGo AI bot are inconsistent. We use **44 game results from the 1st game to 45th game as the training data**. We use **13 game results from the 46th game to 59th game as the test data**. 
 For simplicity, we combined the game results and generated two files: **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)**. 
 
 ### Data description
@@ -26,7 +26,7 @@ Each row represents an instance which consists of 12 input attributes and 2 outp
 * DBTMR: The top-move rate of Black. 
 * DWTMR: The top-move rate of White.
 * The two outputs are EBWR at time _t_ and DBWR at time _t_+1.
-* EBWR: The win rate of Black predicted by EFL OpenGo AI bot at time _t_. (The first letter of each abbreviation represents "E"LF.)
+* EBWR: The win rate of Black predicted by ELF OpenGo AI bot at time _t_. (The first letter of each abbreviation represents "E"LF.)
 
 The names of inputs and outputs in **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)** are DBSN(_t_-1), DWSN(_t_-1), DBWR(_t_-1), DWWR(_t_-1), DBTMR(_t_-1), DWTMR(_t_-1), DBSN(_t_), DWSN(_t_), DBWR(_t_), DWWR(_t_), DBTMR(_t_), DWTMR(_t_), EBWR(_t_), and DBWR(_t_+1).
 
