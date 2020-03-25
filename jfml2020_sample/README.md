@@ -58,4 +58,4 @@ Enjoy!
 
 
 ### Known problems
-* JFML does not properly work on Java 11. Java 8 is recommended. 
+* JFML does not properly work on Java 11 due to the change of some XML features from Java 8. Thus, Java 8 is recommended. 
