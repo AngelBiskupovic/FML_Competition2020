@@ -1,13 +1,18 @@
 # Overview of FML Competition in FUZZ-IEEE 2020
-This is the overview for Fuzzy Markup Laungage (FML)-based Machine Learning Competition for Human and Smart Machine Co-learning on Game of Go at IEEE WCCI 2020. This page provides the detailed information, the datasets and the sample codes for the competition. The related information is also listed. 
+This is the overview for the Fuzzy Markup Laungage (FML)-based Machine Learning Competition for Human and Smart Machine Co-learning on Game of Go at IEEE WCCI 2020. This page provides detailed information, datasets and sample code for the competition. Related information is also listed. 
 
 Please visit the competition page => http://oase.nutn.edu.tw/wcci2020-fmlcompetition/
 
 ## Goal 
-The goal of this competition is to design accurate and interpretable fuzzy rule-based regression models using FML. 
+The goal of this competition is to design accurate and interpretable fuzzy rule-based regression models using FML.
+
+## Introduction
+There has been considerable interest among both students and professionals in applying machine learning to the game of Go.
+
+This competition will consider two popular, open-source Go engines: [Darkforest](https://github.com/facebookresearch/darkforestGo) and [ELF OpenGo](https://ai.facebook.com/tools/elf-opengo).  Participants are tasked with fuzzy rule-based regression models which will predict the winning probability each engine assigns to black.
 
 ## Competition Data
-The data in this competition are derived from the data on the game of Go (https://deepmind.com/alphago-master-series). There are 60 game data available. Each game data include the prediction by Darkforest AI bot and that by EFL OpenGo AI bot. The competition data can be found in the director **"[Comp2020Data](Comp2020Data)"** in this page. Each data file is named "C2020_GameDataG?.csv" (? represents the game number.) This year, we remove the 25th, 48th, and 60th games because the predictions of the winning rates by Darkforest AI bot and EFL OpenGo AI bot are inconsistent. We use **44 game results from the 1st game to 45th game as the training data**. We use **13 game results from the 46th game to 59th game as the test data**. 
+The data in this competition are derived from 60 games which were played between AlphaGo and various human masters (https://deepmind.com/alphago-master-series). Each data file includes the predictions from both Darkforest AI and EFL OpenGo AI bot. The competition data can be found in the directory **"[Comp2020Data](Comp2020Data)"** in this page. Each data file is named "C2020_GameDataG?.csv" (? represents the game number.) This year, we will remove the 25th, 48th, and 60th games because the predictions of the winning rates made by the Darkforest AI bot and the ELF OpenGo AI bot are inconsistent. We use **44 game results from the 1st game to 45th game as the training data**. We use **13 game results from the 46th game to 59th game as the test data**. 
 For simplicity, we combined the game results and generated two files: **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)**. 
 
 ### Data description
@@ -21,7 +26,7 @@ Each row represents an instance which consists of 12 input attributes and 2 outp
 * DBTMR: The top-move rate of Black. 
 * DWTMR: The top-move rate of White.
 * The two outputs are EBWR at time _t_ and DBWR at time _t_+1.
-* EBWR: The win rate of Black predicted by EFL OpenGo AI bot at time _t_. (The first letter of each abbreviation represents "E"FL.)
+* EBWR: The win rate of Black predicted by EFL OpenGo AI bot at time _t_. (The first letter of each abbreviation represents "E"LF.)
 
 The names of inputs and outputs in **[C2020_TrainData.csv](Comp2020Data/C2020_TrainData.csv)** and **[C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)** are DBSN(_t_-1), DWSN(_t_-1), DBWR(_t_-1), DWWR(_t_-1), DBTMR(_t_-1), DWTMR(_t_-1), DBSN(_t_), DWSN(_t_), DBWR(_t_), DWWR(_t_), DBTMR(_t_), DWTMR(_t_), EBWR(_t_), and DBWR(_t_+1).
 
@@ -35,16 +40,20 @@ The ranges of all the variables are as follows (The same info is listed in [data
 There are two tasks in this competition. 
 
 ### Task 1: Prediction of EBWR for the current move
-In this task, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict EBWR(_t_) using some or all of the input attributes**. The meaning of this task is as follows. Let assume two players A and B. Player A uses Darkforest AI bot to get the hint of the next moves, while Player B uses EFL OpenGo AI bot to do the same. Each player cannot know the suggestion by the opponent's AI bot. So, Player A uses the fuzzy rule-based regression model to guess the current situation which is predicted by the opponent's AI bot. If it is possible to know that, Player A can evaluate the current situation from multiple viewpoints (i.e., Darkforest and EFL OpenGo). 
+In this task, the goal is **to design a fuzzy rule-based regression model which can accurately predict EBWR(_t_) using some or all of the input attributes**.
+
+The meaning of this task is as follows. Assume two players, A and B, are playing Go. Player A uses Darkforest AI to get hints for the next moves, while Player B uses ELF OpenGo AI to do the same. Each player cannot know the suggestions given by the opponent's AI bot. So, Player A uses the fuzzy rule-based regression model to guess the current situation predicted by the opponent's AI bot, represented by EBWR(_t_). If it is possible to know that, Player A can evaluate the current situation from multiple viewpoints (i.e., Darkforest and ELF OpenGo). 
 
 ### Task 2: Prediction of DBWR for the next move
-In this task, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict DBWR(_t_+1) using some or all of the input attributes**. The meaning of this task is as follows. Let assume that Player A wants to know the future situation to change the strategy at a proper moment. To do that, Player A uses the fuzzy rule-based regression model to predict the winning rate for the next move as well. 
+In this task, the goal is **to design a fuzzy rule-based regressoin model which can accurately predict DBWR(_t_+1) using some or all of the input attributes**.
 
-## Rules
+The meaning of this task is as follows. Assume that Player A wants to know the future situation, in order to change strategy at the proper moment. To do that, Player A uses the fuzzy rule-based regression model to predict the winning rate for the next move as well. 
+
+## Rules    
 * Participants must use FML to design a fuzzy rule-based regression model for the above two tasks.
 * The proposed regression model is evaluated by the mean squread error (MSE) over all instances of the test data ([C2020_TestData.csv](Comp2020Data/C2020_TestData.csv)). 
 * Only the training data is available for optimizing/learning the regression model and tuning the parameters of optimization/learning algorithms.
-* All the input attributes in the training data are not necessarily used. It means that participants can freely choose a part of the input attributes.
+* Not all input attributes in the training data are necessarily used. This means that participants can use all input attributes, or just a subset of them.
 
 ## Evaluation
 The participants must submit a zip file of the following two files to the [competition website](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/). 
@@ -52,9 +61,9 @@ The participants must submit a zip file of the following two files to the [compe
 * A short paper which includes the explanation on (1) the own approach, (2) the MSE for the training and test data, and (3) discussions on the obtained regression models and results. The results for both tasks must be included. 
 * An xml file of the fuzzy rule-based regression model based on FML. 
 
-Any format is acceptable for the short paper. But [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is highly recommended. The number of pages is not limited. Two to four pages are enough in IEEE paper format. 
+Any format is acceptable for the short paper, but the [IEEE paper format](http://oase.nutn.edu.tw/wcci2020-fmlcompetition/files/conference-template-letter.docx) is highly recommended. The number of pages is not limited. Two to four pages are generally enough when using IEEE paper format. 
 
-The competition committee will evaluate the short paper and the xml file. The competition result will be public in IEEE WCCI 2020.
+The competition committee will evaluate the short paper and the xml file. The competition result will be made public at IEEE WCCI 2020.
 
 **Submission Deadline: April 15, 2020, 23:59 (GMT)**
 
@@ -62,13 +71,13 @@ The competition committee will evaluate the short paper and the xml file. The co
 For more details about FML, please download the FML user guide (Version 0.1.1) from http://kws.nutn.edu.tw/fmldoc/
 
 ## Available Softwares
-* VisualFMLTool: It can be executed on platforms containing the Java Runtime Environment. The Java Software Development Kit, including JRE, compiler and many other tools can be found at [here](http://java.sun.com/j2se/). The VisualFMLTool can download from [here](http://kws.nutn.edu.tw/fml/) and then to extract it. Then it is only needed to click the file VisualFMLTool.bat included in the zip to execute the tool.
+* VisualFMLTool: It can be executed on platforms containing the Java Runtime Environment. The Java Software Development Kit, including JRE, compiler and many other tools can be found at [here](http://java.sun.com/j2se/). The VisualFMLTool can download from [here](http://kws.nutn.edu.tw/fml/) and then to extract it. Clicking the file `VisualFMLTool.bat` (included in the zip) will execute the tool.
 
-* JFML: A Java library for FML programming that is very simple to use and compliant with IEEE 1855. JFML can download from [here](https://www.uco.es/JFML/). Additional information about the library can be found in the following papers. A Pyhon library is also available. 
+* JFML: A Java library for FML programming that is very simple to use and compliant with IEEE 1855. JFML can download from [here](https://www.uco.es/JFML/). Additional information about the library can be found in the following papers. A Python library is also available. 
   * J. M. Soto-Hidalgo, Jose M. Alonso, G. Acampora, and J. Alcala-Fdez, "[JFML: A Java library to design fuzzy logic systems according to the IEEE Std 1855-2016](https://ieeexplore.ieee.org/document/8476558)," _IEEE Access_, vol. 6, pp. 54952-54964, 2018.
   * J. M. Soto-Hidalgo, A. Vitiello, J. M. Alonso, G. Acampora, and J. Alcala-Fdez, "[Design of fuzzy controllers for embedded systems with JFML](https://www.atlantis-press.com/journals/ijcis/125905646)," _International Journal of Computational Intelligence Systems_, vol. 12, no. 1, pp. 204-214, 2019.
 
-## Sample Codes for This Competition
+## Sample Code for This Competition
 * A sample Eclipse project is available on "[jfml2020_sample](https://github.com/CI-labo-OPU/FML_Competition2020/tree/master/jfml2020_sample)" which is based on JFML. The sample codes can be used in IntelliJ IDEA as well. 
 
 ## Reference
