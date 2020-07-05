@@ -1,0 +1,3 @@
+﻿,DBSN(t-1):,DWSN(t-1):,DBWR(t-1):,DWWR(t-1):,DBTMR(t-1):,DWTMR(t-1):,DBSN(t):,DWSN(t):,DBWR(t):,DWWR(t):,DBTMR(t):,DWTMR(t):,EBWR(t):,DBWR(t+1):
+min,0,0,0,0,0,0.4,0,0,0,0,0,0.4,0,0
+max,22000,22000,1,1,1,1,22000,22000,1,1,1,1,1,1
